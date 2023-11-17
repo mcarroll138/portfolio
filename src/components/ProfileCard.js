@@ -8,12 +8,14 @@ export default function ProfileCard() {
     background: "#ffffff",
     // color: "white",
     border: "2px solid white",
-    borderRadius: "4px",
+    borderRadius: "14px",
     display: "inline-grid",
     padding: "40px 38px",
     flexdirection: "column",
     alignitems: "center",
     gap: "40px",
+    marginLeft: 22,
+    marginTop: 80,
   };
   const profileImageStyle = {
     display: "flex",
@@ -76,7 +78,6 @@ export default function ProfileCard() {
             alignitems: "center",
           }}
         >
-            
           <img src={GitHub} alt="Git Hub"></img>
           <div style={githubLinkStyle} id="githubLinkStyle">
             {" "}
@@ -90,33 +91,34 @@ export default function ProfileCard() {
             </a>
           </div>
         </div>
-      </div>
-      <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 8,
-            alignitems: "center",
-          }}
-        >
-          <img
-            src={LinkedIn}
-            alt="Linked In"
+
+        <div>
+          <div
             style={{
-              height: 24,
+              display: "flex",
+              justifyContent: "center",
+              gap: 8,
+              alignitems: "center",
             }}
-          ></img>
-          <div style={githubLinkStyle} id="githubLinkStyle">
-            {" "}
-            <a
-              href="https://www.linkedin.com/in/michaelgarycarroll/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Linked In
-              <img src={Arrow} alt="Arrow"></img>
-            </a>
+          >
+            <img
+              src={LinkedIn}
+              alt="Linked In"
+              style={{
+                height: 24,
+              }}
+            ></img>
+            <div style={githubLinkStyle} id="githubLinkStyle">
+              <a
+                href="https://www.linkedin.com/in/michaelgarycarroll/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              {" "}
+                Linked in
+                <img src={Arrow} alt="Arrow"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
