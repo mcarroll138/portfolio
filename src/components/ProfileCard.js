@@ -76,6 +76,7 @@ export default function ProfileCard() {
             alignitems: "center",
           }}
         >
+            
           <img src={GitHub} alt="Git Hub"></img>
           <div style={githubLinkStyle} id="githubLinkStyle">
             {" "}
