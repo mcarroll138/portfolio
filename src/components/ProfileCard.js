@@ -1,7 +1,7 @@
 import React from "react";
 import Arrow from "../assets/Arrow.svg";
 import GitHub from "../assets/Github.svg";
-import LinkedIn from "../assets/linkedin-svgrepo-com.svg";
+import LinkedIn from "../assets/Linkedin.svg";
 
 export default function ProfileCard() {
   const profileContainerStyle = {
@@ -15,7 +15,9 @@ export default function ProfileCard() {
     alignitems: "center",
     gap: "40px",
     marginLeft: 22,
+    marginRight: 22,
     marginTop: 80,
+    marginBottom: 80,
   };
   const profileImageStyle = {
     display: "flex",
@@ -99,6 +101,7 @@ export default function ProfileCard() {
               justifyContent: "center",
               gap: 8,
               alignitems: "center",
+              marginTop: 10,
             }}
           >
             <img
@@ -109,12 +112,12 @@ export default function ProfileCard() {
               }}
             ></img>
             <div style={githubLinkStyle} id="githubLinkStyle">
+              {" "}
               <a
                 href="https://www.linkedin.com/in/michaelgarycarroll/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              {" "}
                 Linked in
                 <img src={Arrow} alt="Arrow"></img>
               </a>
