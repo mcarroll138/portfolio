@@ -13,9 +13,14 @@ export default function LandingPage() {
   };
   return (
     <div style={mainDivContainerStyle}>
-      <ProfileCard />
+      <div>
+        <ProfileCard />
+      </div>
       {/* <Projects /> */}
-      <ProjectList />
+      <div style={{display: 'flex',
+  justifyContent: 'flexEnd',}}>
+        <ProjectList />
+      </div>
       <HistoryBackgroundCard />
     </div>
   );
