@@ -22,6 +22,7 @@ export default function HistoryBackgroundCard() {
     fontWeight: 400,
     letterSpacing: "-2px",
     paddingBottom: 40,
+    color: "#783afc",
   };
   const historyBodyStyle = {
     fontFamily: "inter",

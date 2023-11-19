@@ -2,9 +2,20 @@ import React from "react";
 import Projects from "./Projects";
 import CoffeeRoaster from "../assets/lanternrouge@2x.png";
 import Bakery from "../assets/bakery@2x.png";
-import TheCircuit from "../assets/thecircuit@2x.png";
+import TheCircuit from "../assets/TheCircuit.jpg";
 import TheFactory from "../assets/factory@2x.png";
 
+const projectContainerStyle = {
+  // display: "flex",
+  // flexWrap: "wrap",
+  // flexDirection: "row",
+  maxWidth: 336,
+  background: "#ffffff",
+  border: "2px solid white",
+  borderRadius: "14px",
+  padding: "40px 38px",
+  marginBottom: 40,
+};
 const mainProjectList = [
   {
     image: CoffeeRoaster,
@@ -40,17 +51,21 @@ function ProjectList() {
   return (
     <>
       <div
+        id="Capstone Project Container"
         style={{
           justifyContent: "right",
           marginTop: 80,
           marginLeft: 330,
           marginRight: 20,
-          width: 720,
-          // display: "flex",
-          // alignItems: "flexEnd",
-          // flexWrap: "wrap",
-          // minWidth: 600,
-          // alignContent: 'spaceBetween',
+          maxWidth: 720,
+          right: 0,
+          background: "#ffffff",
+          border: "2px solid white",
+          borderRadius: "14px",
+          display: "flex",
+          flexDirection: "column",
+          padding: "40px 38px",
+          marginBottom: 80,
         }}
       >
         <Projects
@@ -60,37 +75,57 @@ function ProjectList() {
           link={capstoneProject.link}
         />
       </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "flexEnd",
-          // marginLeft: 330,
-          // marginTop: 80,
-          maxWidth: 336,
-          // justifyContent: "spaceEvenly",
-          //above is old
-          // display: "inlineFlex",
-          flexDirection: "row",
-          // alignItems: "flexStart",
-          // marginLeft: 330,
-          // marginTop: 80,
-          // width: 360,
-          // justifyContent: "spaceBetween",
-          // flexWrap: "wrap",
-          // alignContent: 'spaceBetween',
-        }}
-      >
+
+      <div>
         {mainProjectList.map((projects, index) => (
-          <Projects
-            image={projects.image}
-            name={projects.name}
-            description={projects.description}
-            link={projects.link}
-            key={index}
-          />
+          <div key={index} style={projectContainerStyle}>
+            <Projects
+              image={projects.image}
+              name={projects.name}
+              description={projects.description}
+              link={projects.link}
+              // key={index}
+            />
+          </div>
         ))}
       </div>
     </>
   );
 }
 export default ProjectList;
+
+{
+  /* <div
+        style={{
+          // flexFlow: "row",
+          
+          display: "flex",
+          flexDirection: "row",
+          maxWidth: 336,
+          background: "#ffffff",
+          border: "2px solid white",
+          borderRadius: "14px",
+          // display: "flex",
+          // flexDirection: "column",
+          padding: "40px 38px",
+          // marginBottom: 180,
+          // flexWrap: "wrap",
+          // flexDirection: "rowReverse",
+          // flex: '1 1 100px',
+          // alignItems: "flexEnd",
+          // marginLeft: 330,
+          // marginTop: 80,
+          // justifyContent: "spaceEvenly",
+          //above is old
+          // display: "inlineFlex",
+          // alignItems: "flexStart",
+          // marginLeft: 330,
+          // marginTop: 80,
+          // width: 360,
+          // justifyContent: "spaceBetween",
+          // flexWrap: "wrap",
+          alignContent: 'spaceBetween',
+        }} */
+}
+        
+        

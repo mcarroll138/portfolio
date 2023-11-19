@@ -2,11 +2,11 @@ import React from "react";
 import Arrow from "../assets/Arrow.svg";
 import GitHub from "../assets/Github.svg";
 import LinkedIn from "../assets/Linkedin.svg";
+import ProfilePhoto from "../assets/ProfilePicture.png";
 
 export default function ProfileCard() {
   const profileContainerStyle = {
     background: "#ffffff",
-    // color: "white",
     border: "2px solid white",
     borderRadius: "14px",
     display: "inline-grid",
@@ -62,39 +62,23 @@ export default function ProfileCard() {
     paddingTop: 4,
   };
   return (
-    <div style={profileContainerStyle} id="profileContainerStyle">
-      <div style={profileImageStyle} id="profileImageStyle">
-        <img src={GitHub} alt="Git Hub"></img>
-      </div>
-      <div style={profileNameStyle} id="profileNameStyle">
-        Michael Carroll
-        <div style={profileTitleStyle} id="profileTitleStyle">
-          Junior Developer
+    <div
+      style={{
+        width: 400,
+        position: "sticky",
+        top: 0,
+      }}
+    >
+      <div style={profileContainerStyle} id="profileContainerStyle">
+        <div style={profileImageStyle} id="profileImageStyle">
+          <img src={ProfilePhoto} alt="Git Hub"></img>
         </div>
-      </div>
-      <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 8,
-            alignitems: "center",
-          }}
-        >
-          <img src={GitHub} alt="Git Hub"></img>
-          <div style={githubLinkStyle} id="githubLinkStyle">
-            {" "}
-            <a
-              href="https://github.com/mcarroll138"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github portfolio
-              <img src={Arrow} alt="Arrow"></img>
-            </a>
+        <div style={profileNameStyle} id="profileNameStyle">
+          Michael Carroll
+          <div style={profileTitleStyle} id="profileTitleStyle">
+            Junior Developer
           </div>
         </div>
-
         <div>
           <div
             style={{
@@ -102,26 +86,50 @@ export default function ProfileCard() {
               justifyContent: "center",
               gap: 8,
               alignitems: "center",
-              marginTop: 10,
             }}
           >
-            <img
-              src={LinkedIn}
-              alt="Linked In"
-              style={{
-                height: 24,
-              }}
-            ></img>
+            <img src={GitHub} alt="Git Hub"></img>
             <div style={githubLinkStyle} id="githubLinkStyle">
               {" "}
               <a
-                href="https://www.linkedin.com/in/michaelgarycarroll/"
+                href="https://github.com/mcarroll138"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Linked in
+                github portfolio
                 <img src={Arrow} alt="Arrow"></img>
               </a>
+            </div>
+          </div>
+
+          <div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: 8,
+                alignitems: "center",
+                marginTop: 10,
+              }}
+            >
+              <img
+                src={LinkedIn}
+                alt="Linked In"
+                style={{
+                  height: 24,
+                }}
+              ></img>
+              <div style={githubLinkStyle} id="githubLinkStyle">
+                {" "}
+                <a
+                  href="https://www.linkedin.com/in/michaelgarycarroll/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin
+                  <img src={Arrow} alt="Arrow"></img>
+                </a>
+              </div>
             </div>
           </div>
         </div>

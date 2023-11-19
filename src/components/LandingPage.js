@@ -3,7 +3,8 @@ import ProfileCard from "./ProfileCard";
 import HistoryBackgroundCard from "./BackgroundCard";
 import Projects from "./Projects";
 import ProjectList from "./ProjectList";
-import ExperienceCard from "./ExperienceCard";
+import ExperienceCard from "./Experience";
+import ExperienceList from "./ExperienceList";
 
 export default function LandingPage() {
   const mainDivContainerStyle = {
@@ -12,9 +13,12 @@ export default function LandingPage() {
     background: "black",
     height: "100%",
   };
+
   return (
     <div style={mainDivContainerStyle}>
-      <div style={{ marginRight: 400 }}>
+      <div
+      // style={{ marginRight: 400 }}
+      >
         <ProfileCard />
       </div>
       {/* <Projects /> */}
@@ -22,7 +26,7 @@ export default function LandingPage() {
         <ProjectList />
       </div>
       <div>
-        <ExperienceCard />
+        <ExperienceList />
       </div>
       <div>
         <HistoryBackgroundCard />

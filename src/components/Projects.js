@@ -6,22 +6,25 @@ import CoffeeRoaster from "../assets/Frame 3.svg";
 function Projects(props) {
   console.log(props);
   const profileContainerStyle = {
-    background: "#ffffff",
-    border: "2px solid white",
-    borderRadius: "14px",
-    display: "flex",
-    flexDirection: "column",
-    padding: "40px 38px",
+    // background: "#ffffff",
+    // border: "2px solid white",
+    // borderRadius: "14px",
+    // display: "flex",
+    // flexDirection: "column",
+    // padding: "40px 38px",
+    // marginBottom: 80,
     // alignItems: "center",
-    gap: "40px",
-    marginLeft: 22,
-    marginRight: 22,
-    marginBottom: 80,
-    // width: 720,
+    // gap: "40px",
+    // marginLeft: 22,
+    // marginRight: 22,
+    // width: 320,
   };
   const projectImageStyle = {
-    maxWidth: 272,
-    // height: 272,
+    width: "100%",
+    height: "auto",
+    borderRadius: 20,
+
+    // height: 1272,
     // borderRadius: 20,
     // background: "#F1EBFF",
   };
@@ -45,38 +48,17 @@ function Projects(props) {
     letterSpacing: "-.48px",
   };
   return (
-    <>
-      <div
-        style={{
-          // display: "-ms-inline-flexbox",
-          display: "flex",
-          flexDirection: "row",
-          // alignitems: "flexEnd",
-        }}
-      >
-        <div style={profileContainerStyle} id="profileContainerStyle">
-          <div style={projectImageStyle} id="projectImageStyle">
-            {/* <img src={LinkedIn} alt="Git Hub"></img> */}
-            <img
-              src={props.image}
-              style={{
-                width: 272,
-                justifyContent: "center",
-                alignItems: "center",
-                // marginLeft: 14,
-              }}
-              alt=""
-            ></img>
-          </div>
-          <div style={projectTitleStyle}>Project</div>
-          <div style={projectNameStyle}>[{props.name}]</div>
-          <div style={projectDescriptionStyle}>{props.description}</div>
-          <div>
-            <a href={props.link}>Link to Project</a>
-          </div>
-        </div>
+    <div>
+      <div style={projectImageStyle} id="projectImageStyle">
+        <img src={props.image} style={projectImageStyle} alt=""></img>
       </div>
-    </>
+      <div style={projectTitleStyle}>Project</div>
+      <div style={projectNameStyle}>[{props.name}]</div>
+      <div style={projectDescriptionStyle}>{props.description}</div>
+      <div>
+        <a href={props.link}>Link to Project</a>
+      </div>
+    </div>
   );
 }
 
@@ -84,5 +66,6 @@ Projects.propTypes = {
   name: PropTypes.string,
   description: PropTypes.string,
   link: PropTypes.string,
+  image: PropTypes.string,
 };
 export default Projects;
