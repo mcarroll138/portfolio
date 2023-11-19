@@ -12,7 +12,7 @@ export default function HistoryBackgroundCard() {
     background: "#ffffff",
     border: "2px solid white",
     gap: "40px",
-    marginLeft: 22,
+    marginLeft: 352,
     marginTop: 80,
   };
   const historyTitleStyle = {

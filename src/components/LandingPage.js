@@ -3,6 +3,7 @@ import ProfileCard from "./ProfileCard";
 import HistoryBackgroundCard from "./BackgroundCard";
 import Projects from "./Projects";
 import ProjectList from "./ProjectList";
+import ExperienceCard from "./ExperienceCard";
 
 export default function LandingPage() {
   const mainDivContainerStyle = {
@@ -13,15 +14,19 @@ export default function LandingPage() {
   };
   return (
     <div style={mainDivContainerStyle}>
-      <div>
+      <div style={{ marginRight: 400 }}>
         <ProfileCard />
       </div>
       {/* <Projects /> */}
-      <div style={{display: 'flex',
-  justifyContent: 'flexEnd',}}>
+      <div>
         <ProjectList />
       </div>
-      <HistoryBackgroundCard />
+      <div>
+        <ExperienceCard />
+      </div>
+      <div>
+        <HistoryBackgroundCard />
+      </div>
     </div>
   );
 }

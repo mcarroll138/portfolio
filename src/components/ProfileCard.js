@@ -17,7 +17,8 @@ export default function ProfileCard() {
     marginLeft: 22,
     marginRight: 22,
     marginTop: 80,
-    marginBottom: 80,
+    marginBottom: "400vh",
+    position: "absolute",
   };
   const profileImageStyle = {
     display: "flex",

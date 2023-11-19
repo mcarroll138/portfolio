@@ -1,7 +1,7 @@
 import React from "react";
 import LinkedIn from "../assets/Linkedin.svg";
 import PropTypes from "prop-types";
-import CoffeeRoaster from "../assets/CoffeeRoaster.png";
+import CoffeeRoaster from "../assets/Frame 3.svg";
 
 function Projects(props) {
   console.log(props);
@@ -17,13 +17,13 @@ function Projects(props) {
     marginLeft: 22,
     marginRight: 22,
     marginBottom: 80,
-    maxWidth: 320,
+    // width: 720,
   };
   const projectImageStyle = {
-    // width: 272,
+    maxWidth: 272,
     // height: 272,
-    borderRadius: 20,
-    background: "#F1EBFF",
+    // borderRadius: 20,
+    // background: "#F1EBFF",
   };
   const projectTitleStyle = {
     fontFamily: "inter",
@@ -35,21 +35,23 @@ function Projects(props) {
     fontFamily: "inter",
     fontSize: 40,
     fontWeight: 400,
-    letterSpacing: '-2px',
+    letterSpacing: "-2px",
   };
-    const projectDescriptionStyle = {
-      fontFamily: "inter",
-      fontSize: 16,
-      fontWeight: 400,
-      lineHeight: '140%',
-      letterSpacing: "-.48px",
-    };
+  const projectDescriptionStyle = {
+    fontFamily: "inter",
+    fontSize: 16,
+    fontWeight: 400,
+    lineHeight: "140%",
+    letterSpacing: "-.48px",
+  };
   return (
     <>
       <div
         style={{
-          display: "-ms-inline-flexbox",
+          // display: "-ms-inline-flexbox",
+          display: "flex",
           flexDirection: "row",
+          // alignitems: "flexEnd",
         }}
       >
         <div style={profileContainerStyle} id="profileContainerStyle">
@@ -58,10 +60,10 @@ function Projects(props) {
             <img
               src={props.image}
               style={{
-                width: "90%",
+                width: 272,
                 justifyContent: "center",
                 alignItems: "center",
-                marginLeft: 14,
+                // marginLeft: 14,
               }}
               alt=""
             ></img>
