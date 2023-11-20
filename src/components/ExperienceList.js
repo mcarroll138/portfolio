@@ -27,15 +27,16 @@ export default function ExperienceList() {
       style={{
         background: "#ffffff",
         border: "2px solid white",
-        borderRadius: "14px",
-        width: 720,
+        borderRadius: "24px",
+        maxWidth: 990,
         padding: 32,
-        marginLeft: 352,
+        margin: "auto",
       }}
     >
       <div
         style={{
           color: "#783afc",
+          fontFamily: "inter",
           fontSize: 40,
           fontWeight: 400,
           lineHeight: "100%",

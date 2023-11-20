@@ -8,17 +8,20 @@ export default function ProfileCard() {
   const profileContainerStyle = {
     background: "#ffffff",
     border: "2px solid white",
-    borderRadius: "14px",
-    display: "inline-grid",
+    borderRadius: "24px",
     padding: "40px 38px",
-    flexdirection: "column",
-    alignitems: "center",
-    gap: "40px",
-    marginLeft: 22,
-    marginRight: 22,
+    // gap: "40px",
     marginTop: 80,
-    marginBottom: "400vh",
-    position: "absolute",
+    margin: "auto",
+    marginBottom: 60,
+    maxWidth: 912,
+    // display: "inline-grid",
+    // flexdirection: "column",
+    // alignitems: "center",
+    // marginLeft: "10%",
+    // marginRight: "10%",
+    // marginBottom: "400vh",
+    // position: "absolute",
   };
   const profileImageStyle = {
     display: "flex",
@@ -63,11 +66,11 @@ export default function ProfileCard() {
   };
   return (
     <div
-      style={{
-        width: 400,
-        position: "sticky",
-        top: 0,
-      }}
+      // style={{
+      //   width: 400,
+      //   position: "sticky",
+      //   top: 0,
+      // }}
     >
       <div style={profileContainerStyle} id="profileContainerStyle">
         <div style={profileImageStyle} id="profileImageStyle">

@@ -4,7 +4,7 @@ import Tassle from "../assets/TassleHat.svg";
 export default function HistoryBackgroundCard() {
   const historyContainerStyle = {
     // display: "flex",
-    maxWidth: 720,
+    maxWidth: 990,
     padding: "32px 32px 32px 40px",
     flexdirection: "column",
     alignitems: "flexStart",
@@ -12,7 +12,7 @@ export default function HistoryBackgroundCard() {
     background: "#ffffff",
     border: "2px solid white",
     gap: "40px",
-    marginLeft: 352,
+    margin: "auto",
     marginTop: 80,
   };
   const historyTitleStyle = {

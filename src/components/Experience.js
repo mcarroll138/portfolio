@@ -1,21 +1,11 @@
 import React from "react";
-import Tassle from "../assets/TassleHat.svg";
 import PropTypes from "prop-types";
 
 export default function Experience(props) {
   const profileContainerStyle = {
     background: "#ffffff",
-    // border: "2px solid white",
-    borderRadius: "14px",
-    // display: "flex",
-    // flexDirection: "column",
-    // padding: "40px 38px",
-    // // alignItems: "center",
-    // gap: "40px",
-    // marginLeft: 22,
-    // // marginRight: 22,
-    // // marginBottom: 80,
-    // width: 720,
+    borderRadius: "24px",
+    margin: "auto",
   };
 
   const experienceTypeStyle = {
@@ -33,12 +23,32 @@ export default function Experience(props) {
     paddingTop: 16,
     paddingBottom: 16,
   };
+  const experienceDateStyle = {
+    fontFamily: "inter",
+    fontSize: 16,
+    fontStyle: "italic",
+    fontWeight: 400,
+    lineHeight: "140%",
+    letterSpacing: "-.48px",
+    paddingBottom: 16,
+  };
   const experienceDescriptionStyle = {
     fontFamily: "inter",
     fontSize: 16,
     fontWeight: 400,
+    fontStyle: "normal",
     lineHeight: "140%",
     letterSpacing: "-.48px",
+    paddingBottom: 16,
+  };
+  const experienceLinkStyle = {
+    fontFamily: "inter",
+    fontSize: 16,
+    fontWeight: 400,
+    fontStyle: "normal",
+    lineHeight: "140%",
+    letterSpacing: "-.48px",
+    textDecorationLine: "underline",
   };
   return (
     <>
@@ -46,9 +56,13 @@ export default function Experience(props) {
         <div style={profileContainerStyle} id="profileContainerStyle">
           <div style={experienceTypeStyle}> {props.type}</div>
           <div style={experienceNameStyle}>{props.name}</div>
-          <div>{props.dates}</div>
-          <div>{props.description}</div>
-          <div>{props.link}</div>
+          <div style={experienceDateStyle}>{props.dates}</div>
+          <div style={experienceDescriptionStyle}>{props.description}</div>
+          <div style={experienceLinkStyle}>
+            <a href={props.link} target="_blank" rel="noopener noreferrer">
+              {props.name} Website
+            </a>
+          </div>
         </div>{" "}
       </div>
     </>
@@ -56,7 +70,9 @@ export default function Experience(props) {
 }
 
 Experience.propTypes = {
+  type: PropTypes.string,
   name: PropTypes.string,
+  dates: PropTypes.string,
   description: PropTypes.string,
   link: PropTypes.string,
 };

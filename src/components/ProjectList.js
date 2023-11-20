@@ -5,13 +5,13 @@ import Bakery from "../assets/bakery@2x.png";
 import TheCircuit from "../assets/TheCircuit.jpg";
 import TheFactory from "../assets/factory@2x.png";
 
-const projectContainerStyle = {
-  background: "#ffffff",
-  border: "2px solid white",
-  borderRadius: "14px",
-  padding: "40px 38px",
-  marginBottom: 40,
-};
+// const projectContainerStyle = {
+//   background: "#ffffff",
+//   border: "2px solid white",
+//   borderRadius: "24px",
+//   padding: "40px 38px",
+//   marginBottom: 40,
+// };
 const mainProjectList = [
   {
     image: TheFactory,
@@ -19,6 +19,7 @@ const mainProjectList = [
     description:
       "A webpage application using C# to create and use a database to store both Engineers and Machinery in a database and link them by using many to many relationships.",
     link: "https://github.com/mcarroll138/Factory.Solution.git",
+    // isCapstone: true,
   },
   {
     image: Bakery,
@@ -50,17 +51,21 @@ function ProjectList() {
       <div
         id="Capstone Project Container"
         style={{
-          marginTop: 80,
-          marginLeft: 352,
-          marginRight: 20,
-          maxWidth: 720,
-          right: 0,
-          background: "#ffffff",
-          borderRadius: "14px",
           display: "flex",
           flexDirection: "column",
-          padding: "40px 32px",
-          marginBottom: 80,
+          margin: "auto",
+          maxWidth: 986,
+          // marginTop: 80,
+          // marginLeft: 352,
+          // marginRight: 20,
+          // justifyContent: "center",
+          // position: "absolute",
+          // left: "50%",
+          // right: 0,
+          // background: "#ffffff",
+          // borderRadius: "14px",
+          // padding: "40px 32px",
+          // marginBottom: 80,
         }}
       >
         <Projects
@@ -75,8 +80,9 @@ function ProjectList() {
         style={{
           display: "flex",
           flexDirection: "row-reverse",
+          justifyContent: "space-around",
           flexWrap: "wrap",
-          borderRadius: "14px",
+          borderRadius: "24px",
         }}
       >
         {mainProjectList.map((projects, index) => (

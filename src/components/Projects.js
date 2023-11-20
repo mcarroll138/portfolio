@@ -1,7 +1,6 @@
 import React from "react";
-import LinkedIn from "../assets/Linkedin.svg";
 import PropTypes from "prop-types";
-import CoffeeRoaster from "../assets/Frame 3.svg";
+
 
 function Projects(props) {
   console.log(props);
@@ -12,26 +11,27 @@ function Projects(props) {
     flexDirection: "column",
     padding: "40px 38px",
     marginBottom: 80,
-    marginRight: 22,
-    maxWidth: 336,
+    maxWidth: props.isCapstone ? 1720 : 336,
+    // marginRight: 22,
+    // maxWidth: 336,
   };
   const projectImageStyle = {
-    // maxWidth: 276,
-    maxWidth: props.isCapstone ? 720 : "100%",
+    maxWidth: props.isCapstone ? 1720 : "100%",
     width: "100%",
     height: "auto",
     borderRadius: 20,
     background: "#F1EBFF",
+    // maxWidth: 276,
   };
   const projectTitleStyle = {
     fontFamily: "inter",
     fontSize: 12,
     fontWeight: 800,
     textTransform: "uppercase",
-    // maxWidth: "100%",
     marginTop: 40,
     marginBottom: 16,
     maxWidth: 336,
+    // maxWidth: "100%",
   };
   const projectNameStyle = {
     fontFamily: "inter",
@@ -75,7 +75,9 @@ function Projects(props) {
           [{props.name}]
           <div style={projectDescriptionStyle}>{props.description}</div>
           <div style={projectLinkStyle}>
-            <a href={props.link}>Link to project</a>
+            <a href={props.link} target="_blank" rel="noopener noreferrer">
+              Link to project
+            </a>
           </div>
         </div>
       </div>
