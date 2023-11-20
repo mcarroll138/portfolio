@@ -1,6 +1,7 @@
 import React from "react";
 import Experience from "./Experience";
 import GraduationHat from "../assets/TassleHat.svg";
+import { useIsMobile } from "./MobileContext.js";
 
 const mainExperienceList = [
   {
@@ -22,6 +23,7 @@ const mainExperienceList = [
 ];
 
 export default function ExperienceList() {
+  const isMobile = useIsMobile();
   return (
     <div
       style={{
@@ -30,7 +32,7 @@ export default function ExperienceList() {
         borderRadius: "24px",
         maxWidth: 912,
         padding: 32,
-        margin: "auto",
+        margin: isMobile ? "auto 22px auto 22px" : "auto",
       }}
     >
       <div

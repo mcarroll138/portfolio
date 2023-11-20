@@ -1,10 +1,13 @@
 import React from "react";
 import LandingPage from "./LandingPage.js";
+import { MobileProvier } from "./MobileContext.js";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      <MobileProvier>
+        <LandingPage />
+      </MobileProvier>
     </>
   );
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import Tassle from "../assets/TassleHat.svg";
+import { useIsMobile } from "./MobileContext.js";
 
 export default function HistoryBackgroundCard() {
+  const isMobile = useIsMobile();
   const historyContainerStyle = {
-    // display: "flex",
     maxWidth: 912,
     padding: "32px 32px 32px 40px",
     flexdirection: "column",
@@ -12,7 +13,7 @@ export default function HistoryBackgroundCard() {
     background: "#ffffff",
     border: "2px solid white",
     gap: "40px",
-    margin: "auto",
+    margin: isMobile ? "80px 22px 80px 22px" : "80px auto 80px auto",
     marginTop: 80,
   };
   const historyTitleStyle = {

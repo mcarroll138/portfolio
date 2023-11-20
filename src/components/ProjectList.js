@@ -4,14 +4,8 @@ import CoffeeRoaster from "../assets/lanternrouge@2x.png";
 import Bakery from "../assets/bakery@2x.png";
 import TheCircuit from "../assets/TheCircuit.jpg";
 import TheFactory from "../assets/factory@2x.png";
+import { useIsMobile } from "./MobileContext.js";
 
-// const projectContainerStyle = {
-//   background: "#ffffff",
-//   border: "2px solid white",
-//   borderRadius: "24px",
-//   padding: "40px 38px",
-//   marginBottom: 40,
-// };
 const mainProjectList = [
   {
     image: CoffeeRoaster,
@@ -32,7 +26,7 @@ const mainProjectList = [
     image: Bakery,
     name: "Pierres Treats",
     description:
-      "A webpage application using C# to create and use a database to store both Treats and Flavors in a database and link them by using many to many relationships. This webpage uses authentication to allow users with an account to Create, Edit, and Delete items in the database. If a user is not logged in, the user can only view the treats and flavors stored in the database. Link to GH Page:",
+      "A webpage application using C# to create and use a database to store both Treats and Flavors in a database and link them by using many to many relationships. This webpage uses authentication to allow users with an account to Create, Edit, and Delete items in the database. If a user is not logged in, the user can only view the treats and flavors stored in the database.",
     link: "https://github.com/mcarroll138/PierresTreats.Solution.git",
   },
 ];
@@ -40,12 +34,12 @@ const capstoneProject = {
   image: TheCircuit,
   name: "The Circuit",
   description:
-    "The Circuit is a social media web app that allows users to create events and invite other users to attend. The main goal is connecting people to events in their area. This is an ongoing project of mine and was built as my capstone at Epicodus. I have features that I am looking to implement but the first thing I would like to do is change backends from Firebase and move to Supabase as it will help me scale my features",
+    "A web app that allows users to create events and invite other users to attend. The main goal is connecting people to IRL events in their area. This is an ongoing passion project of mine and was built as my capstone at Epicodus. I have many features that I am looking to implement but the first first on my list is to change the backend from Firebase to Supabase as it will help me scale my features.",
   link: "https://github.com/mcarroll138/PierresTreats.Solution.git",
 };
 
 function ProjectList() {
-  
+  const isMobile = useIsMobile();
   return (
     <>
       <div
@@ -53,19 +47,8 @@ function ProjectList() {
         style={{
           display: "flex",
           flexDirection: "column",
-          margin: "auto",
+          margin: isMobile ? "auto 22px auto 22px" : "auto",
           maxWidth: 986,
-          // marginTop: 80,
-          // marginLeft: 352,
-          // marginRight: 20,
-          // justifyContent: "center",
-          // position: "absolute",
-          // left: "50%",
-          // right: 0,
-          // background: "#ffffff",
-          // borderRadius: "14px",
-          // padding: "40px 32px",
-          // marginBottom: 80,
         }}
       >
         <Projects
@@ -78,14 +61,12 @@ function ProjectList() {
       </div>
       <div
         style={{
-          display: "flex",
-          // flexDirection: "row-reverse",
-          // justifyContent: "space-around",
+          display: !isMobile ? "flex" : "",
           justifyContent: "space-between",
           flexWrap: "wrap",
           borderRadius: "24px",
           maxWidth: 990,
-          margin: "auto",
+          margin: isMobile ? "auto 22px auto 22px " : "auto",
         }}
       >
         {mainProjectList.map((projects, index) => (
