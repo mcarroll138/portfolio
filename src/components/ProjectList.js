@@ -6,12 +6,6 @@ import TheCircuit from "../assets/TheCircuit.jpg";
 import TheFactory from "../assets/factory@2x.png";
 
 const projectContainerStyle = {
-  // display: "flex",
-  // flexWrap: "wrap",
-  // flexDirection: "row",
-  // width: "100%",
-
-  maxWidth: 336,
   background: "#ffffff",
   border: "2px solid white",
   borderRadius: "14px",
@@ -19,13 +13,6 @@ const projectContainerStyle = {
   marginBottom: 40,
 };
 const mainProjectList = [
-  {
-    image: CoffeeRoaster,
-    name: "Coffee Roaster Inventory Tracker",
-    description:
-      "A webpage application where a user can track the coffee inventory coming in and going out. Each incoming restock of beans is equal to 130 lbs while each sale of beans deducts one pound from the stock.",
-    link: "https://github.com/mcarroll138/inventory-tracker.git",
-  },
   {
     image: TheFactory,
     name: "Dr. Sillystringz's Factory",
@@ -40,6 +27,13 @@ const mainProjectList = [
       "A webpage application using C# to create and use a database to store both Treats and Flavors in a database and link them by using many to many relationships. This webpage uses authentication to allow users with an account to Create, Edit, and Delete items in the database. If a user is not logged in, the user can only view the treats and flavors stored in the database. Link to GH Page:",
     link: "https://github.com/mcarroll138/PierresTreats.Solution.git",
   },
+  {
+    image: CoffeeRoaster,
+    name: "Coffee Roaster Inventory Tracker",
+    description:
+      "A webpage application where a user can track the coffee inventory coming in and going out. Each incoming restock of beans is equal to 130 lbs while each sale of beans deducts one pound from the stock.",
+    link: "https://github.com/mcarroll138/inventory-tracker.git",
+  },
 ];
 const capstoneProject = {
   image: TheCircuit,
@@ -50,19 +44,18 @@ const capstoneProject = {
 };
 
 function ProjectList() {
+  
   return (
     <>
       <div
         id="Capstone Project Container"
         style={{
-          justifyContent: "right",
           marginTop: 80,
           marginLeft: 352,
           marginRight: 20,
           maxWidth: 720,
           right: 0,
           background: "#ffffff",
-          border: "2px solid white",
           borderRadius: "14px",
           display: "flex",
           flexDirection: "column",
@@ -75,74 +68,30 @@ function ProjectList() {
           name={capstoneProject.name}
           description={capstoneProject.description}
           link={capstoneProject.link}
+          isCapstone={true}
         />
       </div>
-      <div style={{ width: 300, height: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row-reverse",
+          flexWrap: "wrap",
+          borderRadius: "14px",
+        }}
+      >
         {mainProjectList.map((projects, index) => (
-          <div
+          <Projects
+            image={projects.image}
+            name={projects.name}
+            description={projects.description}
+            link={projects.link}
             key={index}
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              flexDirection: "row",
-              width: 280,
-              // marginBottom: 12,
-              // background: "white",
-              // borderRadius: "14px",
-              marginLeft: 22,
-              // marginRight: 22,
-            }}
-          >
-            <div style={projectContainerStyle}>
-              <Projects
-                image={projects.image}
-                name={projects.name}
-                description={projects.description}
-                link={projects.link}
-                // key={index}
-              />
-            </div>
-          </div>
-          // </div>
+          />
         ))}
       </div>
+      {/* </div> */}
     </>
   );
 }
 export default ProjectList;
 
-{
-  /* <div
-        style={{
-          // flexFlow: "row",
-          
-          display: "flex",
-          flexDirection: "row",
-          maxWidth: 336,
-          background: "#ffffff",
-          border: "2px solid white",
-          borderRadius: "14px",
-          // display: "flex",
-          // flexDirection: "column",
-          padding: "40px 38px",
-          // marginBottom: 180,
-          // flexWrap: "wrap",
-          // flexDirection: "rowReverse",
-          // flex: '1 1 100px',
-          // alignItems: "flexEnd",
-          // marginLeft: 330,
-          // marginTop: 80,
-          // justifyContent: "spaceEvenly",
-          //above is old
-          // display: "inlineFlex",
-          // alignItems: "flexStart",
-          // marginLeft: 330,
-          // marginTop: 80,
-          // width: 360,
-          // justifyContent: "spaceBetween",
-          // flexWrap: "wrap",
-          alignContent: 'spaceBetween',
-        }} */
-}
-        
-        

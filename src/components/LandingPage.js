@@ -10,27 +10,16 @@ export default function LandingPage() {
   const mainDivContainerStyle = {
     border: "2px solid white",
     borderRadius: "4px",
-    background: "black",
+    background: "lightBlue",
     height: "2000vh",
   };
 
   return (
     <div style={mainDivContainerStyle}>
-      <div
-      // style={{ marginRight: 400 }}
-      >
-        <ProfileCard />
-      </div>
-      {/* <Projects /> */}
-      <div>
-        <ProjectList />
-      </div>
-      <div>
-        <ExperienceList />
-      </div>
-      <div>
-        <HistoryBackgroundCard />
-      </div>
+      <ProfileCard />
+      <ProjectList />
+      <ExperienceList />
+      <HistoryBackgroundCard />
     </div>
   );
 }
