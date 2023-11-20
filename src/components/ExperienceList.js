@@ -28,7 +28,7 @@ export default function ExperienceList() {
         background: "#ffffff",
         border: "2px solid white",
         borderRadius: "24px",
-        maxWidth: 990,
+        maxWidth: 912,
         padding: 32,
         margin: "auto",
       }}

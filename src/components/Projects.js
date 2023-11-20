@@ -11,7 +11,7 @@ function Projects(props) {
     flexDirection: "column",
     padding: "40px 38px",
     marginBottom: 80,
-    maxWidth: props.isCapstone ? 1720 : 336,
+    maxWidth: props.isCapstone ? 1720 : 380,
     // marginRight: 22,
     // maxWidth: 336,
   };
@@ -76,7 +76,7 @@ function Projects(props) {
           <div style={projectDescriptionStyle}>{props.description}</div>
           <div style={projectLinkStyle}>
             <a href={props.link} target="_blank" rel="noopener noreferrer">
-              Link to project
+              View project
             </a>
           </div>
         </div>

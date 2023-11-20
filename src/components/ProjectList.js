@@ -14,6 +14,13 @@ import TheFactory from "../assets/factory@2x.png";
 // };
 const mainProjectList = [
   {
+    image: CoffeeRoaster,
+    name: "Lantern Rouge Coffee Roaster Inventory Tracker",
+    description:
+      "A webpage application where a user can track the coffee inventory coming in and going out. Each incoming restock of beans is equal to 130 lbs while each sale of beans deducts one pound from the stock.",
+    link: "https://github.com/mcarroll138/inventory-tracker.git",
+  },
+  {
     image: TheFactory,
     name: "Dr. Sillystringz's Factory",
     description:
@@ -27,13 +34,6 @@ const mainProjectList = [
     description:
       "A webpage application using C# to create and use a database to store both Treats and Flavors in a database and link them by using many to many relationships. This webpage uses authentication to allow users with an account to Create, Edit, and Delete items in the database. If a user is not logged in, the user can only view the treats and flavors stored in the database. Link to GH Page:",
     link: "https://github.com/mcarroll138/PierresTreats.Solution.git",
-  },
-  {
-    image: CoffeeRoaster,
-    name: "Coffee Roaster Inventory Tracker",
-    description:
-      "A webpage application where a user can track the coffee inventory coming in and going out. Each incoming restock of beans is equal to 130 lbs while each sale of beans deducts one pound from the stock.",
-    link: "https://github.com/mcarroll138/inventory-tracker.git",
   },
 ];
 const capstoneProject = {
@@ -79,10 +79,13 @@ function ProjectList() {
       <div
         style={{
           display: "flex",
-          flexDirection: "row-reverse",
-          justifyContent: "space-around",
+          // flexDirection: "row-reverse",
+          // justifyContent: "space-around",
+          justifyContent: "space-between",
           flexWrap: "wrap",
           borderRadius: "24px",
+          maxWidth: 990,
+          margin: "auto",
         }}
       >
         {mainProjectList.map((projects, index) => (

@@ -3,13 +3,14 @@ import ProfileCard from "./ProfileCard";
 import HistoryBackgroundCard from "./BackgroundCard";
 import ProjectList from "./ProjectList";
 import ExperienceList from "./ExperienceList";
+import SkillInterestList from "./SkillInterestList";
 
 export default function LandingPage() {
   const mainDivContainerStyle = {
     border: "2px solid white",
     // borderRadius: "44px",
-    background: "lightBlue",
-    height: "2000vh",
+    background: "#D9D9D9",
+    // height: "2000vh",
   };
 
   return (
@@ -18,6 +19,7 @@ export default function LandingPage() {
       <ProjectList />
       <ExperienceList />
       <HistoryBackgroundCard />
+      <SkillInterestList />
     </div>
   );
 }

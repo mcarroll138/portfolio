@@ -10,11 +10,10 @@ export default function ProfileCard() {
     border: "2px solid white",
     borderRadius: "24px",
     padding: "40px 38px",
-    // gap: "40px",
     marginTop: 80,
-    margin: "auto",
-    marginBottom: 60,
+    margin: " 60px auto 60px auto",
     maxWidth: 912,
+    // gap: "40px",
     // display: "inline-grid",
     // flexdirection: "column",
     // alignitems: "center",
@@ -74,7 +73,7 @@ export default function ProfileCard() {
     >
       <div style={profileContainerStyle} id="profileContainerStyle">
         <div style={profileImageStyle} id="profileImageStyle">
-          <img src={ProfilePhoto} alt="Git Hub"></img>
+          <img src={ProfilePhoto} alt="Head Shot"></img>
         </div>
         <div style={profileNameStyle} id="profileNameStyle">
           Michael Carroll
