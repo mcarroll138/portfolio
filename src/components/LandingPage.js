@@ -11,7 +11,7 @@ export default function LandingPage() {
     border: "2px solid white",
     borderRadius: "4px",
     background: "black",
-    height: "100%",
+    height: "2000vh",
   };
 
   return (

@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import CoffeeRoaster from "../assets/Frame 3.svg";
 
 function Projects(props) {
-  console.log(props);
   const profileContainerStyle = {
     // background: "#ffffff",
     // border: "2px solid white",

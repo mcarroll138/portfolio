@@ -9,6 +9,8 @@ const projectContainerStyle = {
   // display: "flex",
   // flexWrap: "wrap",
   // flexDirection: "row",
+  // width: "100%",
+
   maxWidth: 336,
   background: "#ffffff",
   border: "2px solid white",
@@ -55,7 +57,7 @@ function ProjectList() {
         style={{
           justifyContent: "right",
           marginTop: 80,
-          marginLeft: 330,
+          marginLeft: 352,
           marginRight: 20,
           maxWidth: 720,
           right: 0,
@@ -64,7 +66,7 @@ function ProjectList() {
           borderRadius: "14px",
           display: "flex",
           flexDirection: "column",
-          padding: "40px 38px",
+          padding: "40px 32px",
           marginBottom: 80,
         }}
       >
@@ -75,18 +77,33 @@ function ProjectList() {
           link={capstoneProject.link}
         />
       </div>
-
-      <div>
+      <div style={{ width: 300, height: 0 }}>
         {mainProjectList.map((projects, index) => (
-          <div key={index} style={projectContainerStyle}>
-            <Projects
-              image={projects.image}
-              name={projects.name}
-              description={projects.description}
-              link={projects.link}
-              // key={index}
-            />
+          <div
+            key={index}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              flexDirection: "row",
+              width: 280,
+              // marginBottom: 12,
+              // background: "white",
+              // borderRadius: "14px",
+              marginLeft: 22,
+              // marginRight: 22,
+            }}
+          >
+            <div style={projectContainerStyle}>
+              <Projects
+                image={projects.image}
+                name={projects.name}
+                description={projects.description}
+                link={projects.link}
+                // key={index}
+              />
+            </div>
           </div>
+          // </div>
         ))}
       </div>
     </>
