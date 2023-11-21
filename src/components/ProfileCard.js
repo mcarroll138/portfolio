@@ -87,6 +87,7 @@ export default function ProfileCard() {
                 href="https://github.com/mcarroll138"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ color: "#783afc" }}
               >
                 github portfolio
                 <img src={Arrow} alt="Arrow"></img>
@@ -116,6 +117,7 @@ export default function ProfileCard() {
                   href="https://www.linkedin.com/in/michaelgarycarroll/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ color: "#783afc" }}
                 >
                   Linkedin
                   <img src={Arrow} alt="Arrow"></img>

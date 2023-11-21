@@ -55,12 +55,27 @@ export default function Experience(props) {
       <div>
         <div style={profileContainerStyle} id="profileContainerStyle">
           <div style={experienceTypeStyle}> {props.type}</div>
-          <div style={experienceNameStyle}>{props.name}</div>
+          <div style={experienceNameStyle}>
+            {" "}
+            <a
+              href={props.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#783afc" }}
+            >
+              {props.name}
+            </a>
+          </div>
           <div style={experienceDateStyle}>{props.dates}</div>
           <div style={experienceDescriptionStyle}>{props.description}</div>
           <div style={experienceLinkStyle}>
-            <a href={props.link} target="_blank" rel="noopener noreferrer">
-              {props.name} Website
+            <a
+              href={props.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#783afc" }}
+            >
+              {props.projectName}
             </a>
           </div>
         </div>{" "}

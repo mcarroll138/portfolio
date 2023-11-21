@@ -1,5 +1,5 @@
 import React from "react";
-import Tassle from "../assets/TassleHat.svg";
+import Background from "../assets/Background.svg";
 import { useIsMobile } from "./MobileContext.js";
 
 export default function HistoryBackgroundCard() {
@@ -39,8 +39,8 @@ export default function HistoryBackgroundCard() {
         <div style={historyTitleStyle}>
           <img
             style={{ paddingRight: 16 }}
-            src={Tassle}
-            alt="Hat with tassle"
+            src={Background}
+            alt="Puzzle Piece"
           ></img>
           background
         </div>
