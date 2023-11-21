@@ -17,5 +17,8 @@ export function useViewport() {
 
   const isMobile = width < 740;
 
+  // eslint-disable-next-line no-unused-vars
+  const forceRerender = React.useState()[1];
+
   return { width, isMobile };
 }
