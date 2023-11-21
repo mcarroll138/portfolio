@@ -19,7 +19,7 @@ const mainExperienceList = [
     name: "Epicodus",
     dates: "May - December 2023",
     description:
-      "I am currently enrolled in 27-week program at Epicodus, where I am gaining comprehensive skills in C# and React. The program focuses on immersive learning, and I actively participate in pair programming to collaboratively tackle projects in C#, React, and JavaScript. This hands-on approach has allowed me to accumulate over 1000 coding hours, working on a variety of individual, pair, and group projects. One notable aspect of my learning journey is the commitment to building and contributing to over 80 repositories on GitHub. This experience at Epicodus not only hones my technical abilities but also nurtures a collaborative and solution-oriented and growth mindset, preparing me for success in field of software development",
+      "I am currently enrolled in a 27-week program at Epicodus, where I am gaining comprehensive skills in C# and React. The program focuses on immersive learning, and I actively participate in pair programming to collaboratively tackle projects in C#, React, and JavaScript. This hands-on approach has allowed me to accumulate over 1000 coding hours, working on a variety of individual, pair, and group projects. One notable aspect of my learning journey is the commitment to building and contributing to over 80 repositories on GitHub. This experience at Epicodus not only hones my technical abilities but also nurtures a collaborative and solution-oriented and growth mindset, preparing me for success in field of software development.",
     link: "https://www.epicodus.com/",
   },
 ];

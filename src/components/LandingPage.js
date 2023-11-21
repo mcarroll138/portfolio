@@ -10,9 +10,7 @@ export default function LandingPage() {
   const isMobile = useIsMobile();
   const mainDivContainerStyle = {
     border: "2px solid white",
-    // borderRadius: "44px",
     background: "#D9D9D9",
-    // height: "2000vh",
   };
 
   return (

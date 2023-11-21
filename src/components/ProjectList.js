@@ -20,7 +20,6 @@ const mainProjectList = [
     description:
       "A webpage application using C# to create and use a database to store both Engineers and Machinery in a database and link them by using many to many relationships.",
     link: "https://github.com/mcarroll138/Factory.Solution.git",
-    // isCapstone: true,
   },
   {
     image: Bakery,

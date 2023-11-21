@@ -6,22 +6,19 @@ function Projects(props) {
   console.log(props);
   const projectContainerStyle = {
     background: "#ffffff",
-    borderRadius: "14px",
+    borderRadius: "24px",
     display: "flex",
     flexDirection: "column",
     padding: "40px 38px",
     marginBottom: 80,
     maxWidth: props.isCapstone ? 1720 : 380,
-    // marginRight: 22,
-    // maxWidth: 336,
   };
   const projectImageStyle = {
     maxWidth: props.isCapstone ? 1720 : "100%",
     width: "100%",
     height: "auto",
-    borderRadius: 20,
+    borderRadius: 24,
     background: "#F1EBFF",
-    // maxWidth: 276,
   };
   const projectTitleStyle = {
     fontFamily: "inter",
@@ -31,7 +28,6 @@ function Projects(props) {
     marginTop: 40,
     marginBottom: 16,
     maxWidth: 336,
-    // maxWidth: "100%",
   };
   const projectNameStyle = {
     fontFamily: "inter",

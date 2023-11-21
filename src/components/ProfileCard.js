@@ -21,7 +21,6 @@ export default function ProfileCard() {
   };
   const profileImageStyle = {
     display: "flex",
-    // maxHeight: 260,
     maxWidth: 260,
     paddingRight: 60,
     justifyContent: "center",
@@ -29,7 +28,6 @@ export default function ProfileCard() {
   };
   const profileNameStyle = {
     color: "black",
-    // textAlign: "center",
     fontFamily: "inter",
     fontSize: 32,
     fontStyle: "normal",
@@ -40,7 +38,6 @@ export default function ProfileCard() {
   };
   const profileTitleStyle = {
     color: "black",
-    // textAlign: "center",
     fontFamily: "inter",
     fontSize: 16,
     fontStyle: "normal",
@@ -75,7 +72,6 @@ export default function ProfileCard() {
           <div
             style={{
               display: "flex",
-              // justifyContent: "center",
               gap: 8,
               alignitems: "center",
             }}
@@ -98,9 +94,7 @@ export default function ProfileCard() {
             <div
               style={{
                 display: "flex",
-                //   justifyContent: "center",
                 gap: 8,
-                //   alignitems: "center",
                 marginTop: 10,
               }}
             >
