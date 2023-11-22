@@ -34,7 +34,7 @@ const capstoneProject = {
   name: "The Circuit",
   description:
     "A web app that allows users to create events and invite other users to attend. The main goal is connecting people to IRL events in their area. This is an ongoing passion project of mine and was built as my capstone at Epicodus. I have many features that I am looking to implement but the first first on my list is to change the backend from Firebase to Supabase as it will help me scale my features.",
-  link: "https://github.com/mcarroll138/PierresTreats.Solution.git",
+  link: "https://github.com/mcarroll138/The-Circuit.git",
 };
 
 function ProjectList() {
